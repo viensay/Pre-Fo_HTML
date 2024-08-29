@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+body{
+    background-image: url("../img/fond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: "Open Sans" ;
+}
+
+#container{
+    background-color: rgba(255, 255, 255,0.8);
+    width: 80%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 5px solid white;
+    padding-bottom: 5px;
+    margin-bottom:5px;
+}
+
+caption{
+    visibility: hidden;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: rgb(43, 61, 65);
+    color: white;
+    line-height: 5;
+}
+
+td{
+    border : 1px solid rgb(43, 61, 65);
+}
