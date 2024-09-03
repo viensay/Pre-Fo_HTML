@@ -7,24 +7,26 @@
 }
 
 body{
-    background: url(../img/fond.jpg) no-repeat center center fixed ;
+    background: url(../img/fond_sombre.jpg) no-repeat center center fixed ;
     background-size: cover;
     color: rgb(7, 17, 17);
 }
 
-h1{
+h1, h2{
     background-color: rgba(63, 104, 124,0.9);
     color: rgb(203, 202, 197);
     margin: auto;
     padding: 20px;
     text-align: center;
     font-weight: 800;
+    letter-spacing: 0.08em;
 
 }
 
 a{
     text-decoration: none;
     color: rgb(7, 17, 17);
+    display: inline-block;
 }
 
 a:visited{
@@ -42,6 +44,7 @@ ul{
 ul li{
     font-size: 1.3em;
     padding : 5px;
+    display: block;
 }
 
 ul li:hover{
@@ -50,6 +53,16 @@ ul li:hover{
 
 nav{
     background-color: rgba(158, 179, 205,0.8);
+}
+
+a img{
+    height: 50px;
+}
+
+
+main{
+    width: 80%;
+    margin: auto;
 }
 
 p{
@@ -63,8 +76,27 @@ table{
     background-color: rgb(13, 35, 42);
     color: rgb(203, 202, 197);
     padding: 15px;
+    margin-top:50px;
 }
 
 th{
     background-color: rgb(63, 104, 124);
+}
+
+form{
+    height : 600hv;
+    display: flex;
+    flex-direction:column;
+    width: 65%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(13, 35, 42,0.8);
+    color:rgb(203, 202, 197) ;
+    margin-bottom : 20px;
+
+}
+
+caption{
+    visibility: hidden;
 }

@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <h1>Contat</h1>
+        <h1>Contact</h1>
         <nav>
             <ul>
-                <a href="index.html"><li><img src="assets/img/home.svg"></li></a>
-                <a href="Horaire.html"><li>Horaire</li></a>
+                <a href="index.html" title="Page d'accueil"><li><img src="assets/img/home.png"></li></a>
+                <a href="Horaire.html"><li><img src="assets/img/horaire.png"></im></li></a>
                 <a href="page2.html"><li>Page 2</li></a>
                 <a href="page3.html"><li>Page 3</li></a>
                 <a href="page4.html"><li>Page 4</li></a>
@@ -22,9 +22,16 @@
 
     </header>
     <main>
-        <form>
-            <label>Votre nom : </label>
-            <input type="text">
+        <form action="" method="get">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" default="Jean-Pierre">
+            <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" id="prenom">
+            <label for="mail">Adresse mail</label>
+            <input type="email" id="mail" name="mail">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Envoyer</button>
 
         </form>
         <p>
