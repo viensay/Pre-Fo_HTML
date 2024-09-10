@@ -1,102 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@layer base{
+  :root{
+    --color-primary: Peru;
+    --color-secondary: SkyBlue;
+    --color-tertiary: white;
+    --bgcolor-primary: #ced9dd;
+    --image-w: 300px;
+    --font-size: 20rem;
+  }
+  body{
+    background-color: var(--bgcolor-primary);
+  }
+  .bird{
+    width: var(--image-w);
+  }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Nanum Gothic", sans-serif;;
+  h1, .h1,
+  h2, .h2,
+  h3, .h3{
+    color: var(--color-primary);
+  }
+
+  .wrapper.header{
+    background-color: var(--color-secondary);
+    width: 100%;
+  }
+  .header{
+    &.container{
+      height: 350px;
+    }
+    &.h1{ font-size: var(--font-size);}
+  }
+
+  ul.nav{
+    list-style: none;
+    & li {
+      display: inline;
+    }
+  }
 }
 
-body{
-    background: url(../img/fond_sombre.jpg) no-repeat center center fixed ;
-    background-size: cover;
-    color: rgb(7, 17, 17);
-}
-
-h1, h2{
-    background-color: rgba(63, 104, 124,0.9);
-    color: rgb(203, 202, 197);
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-
-}
-
-a{
-    text-decoration: none;
-    color: rgb(7, 17, 17);
-    display: inline-block;
-}
-
-a:visited{
-    color: rgb(7, 17, 17);
-}
-
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    border-bottom: rgba(63, 104, 124,0.9) solid 1px;
-}
-
-ul li{
-    font-size: 1.3em;
-    padding : 5px;
-    display: block;
-}
-
-ul li:hover{
-    background-color: rgb(158, 179, 205);
-}
-
-nav{
-    background-color: rgba(158, 179, 205,0.8);
-}
-
-a img{
-    height: 50px;
-}
-
-
-main{
-    width: 80%;
-    margin: auto;
-}
-
-p{
-    background-color: rgba(158, 179, 205,0.7);
-    padding : 10px;
-}
-
-table{
-    width: 80%;
-    margin:auto;
-    background-color: rgb(13, 35, 42);
-    color: rgb(203, 202, 197);
-    padding: 15px;
-    margin-top:50px;
-}
-
-th{
-    background-color: rgb(63, 104, 124);
-}
-
-form{
-    height : 600hv;
-    display: flex;
-    flex-direction:column;
-    width: 65%;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(13, 35, 42,0.8);
-    color:rgb(203, 202, 197) ;
-    margin-bottom : 20px;
+@layer fonts{
+ body{
+  font-family: "Helvetica", Arial, sans-serif;
+ }
+  h1, .h1,
+  h2, .h2,
+  h3, .h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color-tertiary)
+  }
 
 }
 
-caption{
-    visibility: hidden;
-}
+/* 
+priorité de chargement des layers en css 
+------------------------------------------*/
+@layer base, fonts;
